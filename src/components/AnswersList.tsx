@@ -1,6 +1,12 @@
+import React from "react";
 import AnswersItem from "./AnswersItem";
+import { FormInput } from "./FormElement";
 
-export default function AnswersList(props) {
+type AnswersListProps = {
+  answersList: FormInput[];
+};
+
+export default function AnswersList(props: AnswersListProps) {
   console.log("Inside AnswersList: ", props);
 
   const { answersList } = props;
